@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "competencias",
+			"path": "../../../../../../../../../../competencias"
+		},
+		{
+			"name": "ITI PREPA",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ITI PREPA"
+	}
+}

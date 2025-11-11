@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio de Vidda Espinoza</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <script>
+    function mostrarSeccion(id) {
+      document.querySelectorAll('section').forEach(section => {
+        section.style.display = 'none';
+      });
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+
+  <header>
+    <h1>Portafolio de Vidda Espinoza</h1>
+    <div class="linea-header"></div>
+  </header>
+
+  <nav>
+    <a onclick="mostrarSeccion('inicio')">Inicio</a>
+    <div class="dropdown">
+      <a>Sobre Mí</a>
+      <div class="dropdown-content">
+        <a onclick="mostrarSeccion('sobre')">Perfil</a>
+        <div class="dropdown">
+          <a>Ideología</a>
+          <div class="nested-dropdown-content">
+            <a onclick="mostrarSeccion('cosmovision')">Cosmovisión</a>
+            <a onclick="mostrarSeccion('vision-mision')">Visión y Misión</a>
+            <div class="dropdown">
+              <a>Metas</a>
+              <div class="nested-dropdown-content">
+                <a onclick="mostrarSeccion('metas-corto')">Corto</a>
+                <a onclick="mostrarSeccion('metas-mediano')">Mediano</a>
+                <a onclick="mostrarSeccion('metas-largo')">Largo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a>Competencias</a>
+      <div class="dropdown-content">
+        <a onclick="mostrarSeccion('competencias-matematicas')">Matemáticas</a>
+        <a onclick="mostrarSeccion('competencias-ciencias')">Ciencias Experimentales</a>
+        <a onclick="mostrarSeccion('competencias-comunicacion')">Comunicación</a>
+        <a onclick="mostrarSeccion('competencias-genericas')">Genéricas</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SECCIONES -->
+  <section id="inicio" class="img-section">
+    <div class="img-contenido">
+      <div class="img-imagen">
+        <img src="me/yo1.JPG" alt="Foto personal">
+      </div>
+      <div class="img-texto">
+        <h2>Inicio</h2>
+        <p>¡Bienvenido a mi portafolio! En este espacio, comparto mi trayectoria académica, mis proyectos y las experiencias que han contribuido a mi crecimiento personal y profesional.</p>
+        <p>Mi meta es producir diferentes tipos de proyectos visuales que sean atractivos y generen consciencia, y este portafolio refleja mi dedicación, logros y aprendizajes a lo largo de este tiempo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" style="display: none;">
+    <div class="img-contenido">
+      <div class="img-imagen">
+        <img src="me/fam.JPEG" alt="Foto familia">
+      </div>
+      <div class="img-texto">
+        <h2>Sobre Mí</h2>
+        <p>Mi nombre es Vidda Ssayde Espinoza Salazar, tengo 17 años y soy originaria de Tampico, Tamaulipas, México. Tengo dos hermanos mayores. La mayor, que es Naomy Márquez, de 29 años, actualmente ejerce su carrera de odontología especializada en el área de pediatría y tiene ya una familia compuesta por su esposo y su hija, mi sobrina de 1 año. Mi hermano, Omar Márquez, de 21 años, está en su servicio social de la carrera de odontología. Mis padres, Socorro Salazar y David Espinoza, ambos ejercen en el área de la odontología con una clínica dental propia de más de 30 años.</p>
+      </div>
+    </div>
+    <p>Mis primeros años transcurrieron en el jardín de niños del Colegio Constitución Mexicana en Madero, Tamaulipas. A los 5 años ingresé a la primaria de este mismo, en la cual estuve involucrada en el coro y en su orquesta. Tuvimos varias participaciones y reconocimientos en la zona. En mi sexto año de primaria inició la pandemia, lo cual dificultó al principio las clases, pero a pesar de todo me gradué con excelencia académica con un promedio general de 9.7</p>
+    <p>Inicié la secundaria en línea en el Instituto Soledad Acevedo de los Reyes (ISAR) y en mi segundo año empezaron las clases de manera híbrida, lo cual me hizo mudarme con mi hermana, que ya residía en Montemorelos, para así poder asistir a clases. En ese año inicié clases en línea de programación con la escuela en línea de BYJU'S Future School y clases de violín y piano en el Conservatorio de Música de la Universidad de Montemorelos. En mi tercer año me inscribí a clases extracurriculares del programa de robótica del ISAR. Finalizando este año, también finalicé todas mis clases extracurriculares, graduándome de BYJU'S con el nivel máximo en ese momento y con certificados en programación de videojuegos, páginas web y apps. Terminé mis niveles correspondientes de violín y piano y me gradué de la secundaria con excelencia académica, con un promedio general de 9.6.</p>
+    <p>Después de mi graduación, se me presentó la oportunidad de estudiar un año fuera del país en Hamburg, Pennsylvania, en la academia Blue Mountain Academy (BMA), oportunidad que me permitió conocer diferentes partes de Estados Unidos al participar en su equipo de gimnasia Aerial Aires. También participé en el coro menor Sylvan Singers. Esta experiencia me permitió expandir mis conocimientos tanto lingüísticos como sociales.</p> <p>Actualmente asisto a la Preparatoria Ignacio Carrillo Franco, en Montemorelos, Nuevo León, cursando mi sexto tetramestre especializándome en Ciencias Exactas. Mi pasión por la ciencia y la lógica me ha impulsado a enfrentar nuevos retos y a explorar el mundo del conocimiento de manera constante.</p>
+  </section>
+
+  <section id="cosmovision" style="display: none;">
+    <h2>Cosmovisión</h2>
+    <p>Mi vida y mis decisiones están guiadas por mi fe Adventista y mis principios cristianos, que han sido la base de mi formación y crecimiento. Busco reflejar estos valores en cada aspecto de mi vida, actuando con integridad, compromiso y un espíritu de servicio. Mi fe me inspira a dar lo mejor de mí, a mantenerme firme en mis convicciones y a contribuir de manera positiva en mi entorno.</p>
+  </section>
+
+  <section id="vision-mision" style="display: none;">
+    <h2>Visión y Misión</h2>
+    <p><strong>Visión:</strong> Reflejar los valores Adventistas, sirviendo a otros y siendo testimonio vivo con mi diario vivir y mi profesión, dejando un impacto positivo en la sociedad.</p>
+    <p><strong>Misión:</strong>Reflejar la imagen de Cristo a través de una comunicación creativa, ética y de calidad, que transmita principios cristianos de forma clara y accesible, inspirando e informando a la comunidad para fomentar su crecimiento integral.</p>
+  </section>
+
+  <section id="metas-corto" style="display: none;">
+    <h2>Metas a Corto Plazo</h2>
+    <p>Ingresar a la universidad para estudiar la carrera de comunicación, especializándome en áreas como producción audiovisual y creación de contenido digital. Al mismo tiempo, comenzar a adquirir experiencia en la industria creativa, ya sea a través de proyectos personales, colaboraciones o trabajos en producción de video.</p>
+  </section>
+
+  <section id="metas-mediano" style="display: none;">
+    <h2>Metas a Mediano Plazo</h2>
+    <p>Consolidar mis estudios universitarios en comunicación, participando activamente en proyectos audiovisuales que fortalezcan mi experiencia profesional. Tener listo un portafolio sólido de trabajos que reflejen mi estilo creativo y mis valores cristianos, preparándome para emprender en el ámbito de la producción de contenido.</p>
+  </section>
+
+  <section id="metas-largo" style="display: none;">
+    <h2>Metas a Largo Plazo</h2>
+    <p>Establecer mi propio estudio de producción de video, donde pueda desarrollar proyectos creativos que inspiren y transmitan mensajes positivos, reflejando mis valores cristianos. A través de este espacio, quiero contribuir al crecimiento de la industria audiovisual con contenido de calidad, auténtico y con un propósito significativo.</p>
+  </section>
+<!--  COMPETENCIAS MATEMÁTICAS -->
+<section id="competencias-matematicas" style="display: none;">
+  <h2>Competencias Matemáticas</h2>
+
+    <div class="bloque-competencia">
+      <h3>EXCEL</h3>
+      <img src="competencias/mate2.jpg" alt="Fotografía">
+      <h4>Aprendizaje</h4>
+      <p>Justificar resultados usando métodos numéricos y gráficos en una tabla de Excel de probabilidad y estadística, interpretando datos y comunicando la solución con lenguaje matemático y herramientas digitales.</p>
+      <h4>Competencias</h4>
+      <p>4. Argumenta la solución obtenida de un problema, con métodos numéricos, gráficos, analíticos o variacionales, mediante el lenguaje verbal, matemático y el uso de las tecnologías de la información y la comunicación.</p>
+    </div>
+
+    <div class="bloque-competencia">
+      <h3>APUNTES FÍSICA</h3>
+      <div class="imagenes-lado-a-lado">
+        <img src="competencias/mate3.jpg" alt="Imagen 1">
+        <img src="competencias/mate33.jpg" alt="Imagen 2">
+      </div>
+      <h4>Aprendizaje</h4>
+      <p>Aprendí a aplicar las matemáticas en mis apuntes de física para comprender mejor los fenómenos y encontrar soluciones a distintos tipos de problemas de manera lógica y ordenada.</p>
+      <h4>Competencias</h4>
+      <p>2. Formula y resuelve problemas matemáticos, aplicando diferentes enfoques.</p>
+    </div>
+
+    <div class="bloque-competencia">
+      <h3>DIBUJO TÉCNICO</h3>
+      <div class="imagenes-lado-a-lado">
+        <img src="../competencias/mate1.png" alt="Imagen 1">
+        <img src="../competencias/mate11.png" alt="Imagen 2">
+      </div>
+      <h4>Aprendizaje</h4>
+      <p>Aplicar conceptos matemáticos en el dibujo técnico, utilizando cálculos y geometría para representar con precisión las formas, medidas y proporciones de los objetos.</p>
+      <h4>Competencias</h4>
+      <p>1. Construye e interpreta modelos matemáticos mediante la aplicación de procedimientos aritméticos, algebraicos, geométricos y variacionales, para la comprensión y análisis de situaciones reales, hipotéticas o formales.</p>
+      <p>6. Cuantifica, representa y contrasta experimental o matemáticamente las magnitudes del espacio y las propiedades físicas de los objetos que lo rodean.</p>
+    </div>
+
+    <div class="bloque-competencia">
+      <h3>PRESENTACIÓN</h3>
+      <div class="canva-wrapper">
+        <iframe loading="lazy" src="https://www.canva.com/design/DAGUlw9eQQA/KuUpyLufscXqpqVZNrPtjw/view?embed" allowfullscreen></iframe>
+      </div>
+      <h4>Aprendizaje</h4>
+      <p>Explicar y justificar los resultados de una elipse e hipérbola usando representaciones gráficas y cálculos, apoyándome en el lenguaje matemático y en herramientas digitales para mostrar con claridad el proceso y la solución.</p>
+      <h4>Competencias</h4>
+      <p>4. Argumenta la solución obtenida de un problema, con métodos numéricos, gráficos, analíticos o variacionales, mediante el lenguaje verbal, matemático y el uso de las tecnologías de la información y la comunicación.</p>
+    </div>
+</section>
+
+<!--  COMPETENCIAS EN CIENCIAS EXPERIMENTALES -->
+<section id="competencias-ciencias" style="display: none;">
+  <h2>Competencias en Ciencias Experimentales</h2>
+
+  <div class="bloque-competencia">
+    <h3>SANDWICH</h3>
+    <img src="../competencias/expe1.png" alt="Proyecto Sandwich">
+    <h4>Aprendizaje</h4>
+    <p>Representar un proceso de manera clara y ordenada mediante un dibujo, diseñando un modelo visual que demuestra cómo aplicar la creatividad y la organización para comunicar ideas de forma práctica.</p>
+    <h4>Competencias</h4>
+    <p>9. Diseña modelos o prototipos para resolver problemas, satisfacer necesidades o demostrar principios científicos.</p>
+  </div>
+
+  <div class="bloque-competencia">
+    <h3>ARTÍCULO</h3>
+    <iframe src="../competencias/expe2.pdf"></iframe>
+    <h4>Aprendizaje</h4>
+    <p>Comprender cómo la masa se relaciona con las leyes que explican el comportamiento de la materia, analizando su importancia en la química y reflexionando sobre cómo nuestras acciones pueden afectar el equilibrio del entorno.</p>
+    <h4>Competencias</h4>
+    <p>11. Analiza las leyes generales que rigen el funcionamiento del medio físico y valora las acciones humanas de impacto ambiental.</p>
+  </div>
+</section>
+
+<!--  COMPETENCIAS EN COMUNICACIÓN -->
+<section id="competencias-comunicacion" style="display: none;">
+  <h2>Competencias en Comunicación</h2>
+
+  <div class="bloque-competencia">
+    <h3>PRESENTACIÓN EN INGLÉS</h3>
+    <div class="canva-wrapper">
+      <iframe loading="lazy" src="https://www.canva.com/design/DAGWYABrHWo/r4R9ZcOohUKTq3ZW1YIqpA/view?embed" allowfullscreen></iframe>
+    </div>
+    <h4>Aprendizaje</h4>
+    <p>Expresarme en inglés de forma clara y coherente, presentando y defendiendo ideas sobre el impacto del cambio climático con argumentos bien estructurados y un lenguaje adecuado a la situación comunicativa.</p>
+    <h4>Competencias</h4>
+    <p>11. Se comunica en una lengua extranjera mediante un discurso lógico, oral o escrito, congruente con la situación comunicativa.</p>
+    <p>6. Argumenta un punto de vista en público de manera precisa, coherente y creativa.</p>
+  </div>
+
+  <div class="bloque-competencia">
+    <h3>FOTOGRAFÍA</h3>
+    <img src="../competencias/comu2.png" alt="Fotografía">
+    <h4>Aprendizaje</h4>
+    <p>Usar la tecnología para capturar y compartir información a través de una fotografía, utilizando los recursos digitales como medio para expresar ideas y comunicar un mensaje visual.</p>
+    <h4>Competencias</h4>
+    <p>12. Utiliza las tecnologías de la información y comunicación para investigar, resolver problemas, producir materiales y transmitir información.</p>
+  </div>
+
+  <div class="bloque-competencia">
+    <h3>ENSAYO</h3>
+    <div class="imagenes-lado-a-lado">
+      <img src="../competencias/comu3.png" alt="Ensayo 1">
+      <img src="../competencias/comu33.png" alt="Ensayo 2">
+    </div>
+    <h4>Aprendizaje</h4>
+    <p>Organizar mis ideas de forma clara y creativa al redactar un ensayo, estructurando correctamente la introducción, el desarrollo y la conclusión para comunicar mi mensaje con coherencia.</p>
+    <h4>Competencias</h4>
+    <p>5. Expresa ideas y conceptos en composiciones coherentes y creativas, con introducciones, desarrollo y conclusiones claras.</p>
+  </div>
+</section>
+
+<!--  COMPETENCIAS GENÉRICAS -->
+<section id="competencias-genericas" style="display: none;">
+  <h2>Competencias Genéricas</h2>
+
+  <div class="bloque-competencia">
+    <h3>FÚTBOL VALENCIA</h3>
+    <img src="../competencias/gene2.png" alt="Fútbol Valencia">
+    <h4>Aprendizaje</h4>
+    <p>Aprendí la importancia de mantener un estilo de vida saludable a través del deporte, practicando el trabajo en equipo y fortaleciendo mi bienestar físico y mental mediante el fútbol.</p>
+    <h4>Competencias</h4>
+    <p>3. Elige y practica estilos de vida saludables.</p>
+  </div>
+
+  <div class="bloque-competencia">
+    <h3>UNIVERSIDAD DEL MAÑANA</h3>
+    <img src="../competencias/gene3.png" alt="Universidad del Mañana">
+    <h4>Aprendizaje</h4>
+    <p>Aprendí a trabajar en equipo y a asumir responsabilidades al participar como maestra en la “Universidad del Mañana”, colaborando con otros estudiantes para lograr una experiencia educativa organizada y significativa.</p>
+    <h4>Competencias</h4>
+    <p>8. Participa y colabora de manera efectiva en equipos diversos.</p>
+  </div>
+</section>
+
+  <footer>
+    <p>© 2025 Vidda Espinoza | Portafolio Académico</p>
+    <p>Preparatoria Ignacio Carrillo Franco — Ciencias Exactas</p>
+  </footer>
+
+</body>
+</html>
